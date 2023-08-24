@@ -1,0 +1,179 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+ul,li{
+    list-style: none;
+}
+.d-block{
+    display: block;
+}
+.d-none{
+    display: none;
+}
+.d-flex{
+    display: flex;
+}
+.rel{
+    position: relative;
+}
+.abs{
+    position: absolute;
+}
+.ofh{
+    overflow: hidden;
+}
+.jcc{
+    justify-content: center;
+}
+.jcb{
+    justify-content: space-between;
+}
+.h100{
+    height: 100px;
+}
+.h300{
+    height: 300px;
+}
+.h200{
+    height: 200px;
+}
+.h100{
+    height: 100px;
+}
+.w1200{
+    width: 1200px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.w400{
+    width: 400px;
+}
+/* hd */
+#hd{
+    background-color: rgb(23, 23, 139);
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d1a{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    padding: 35px 0px;
+    text-align: center;
+    min-width: 110px;
+}
+.d2ul{
+    font-size: 18px;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: 10000;
+    background-color:  rgb(150, 150, 226);
+}
+#gnb:hover .d2ul{
+    opacity: 1;
+    height: 8.2rem;
+}
+#gnb{
+    justify-content: center;
+    align-items: center;
+}
+.d2ul li{
+    padding: 5px 19px;
+}
+.d2ul li a{
+    color: white;
+    text-align: center;
+}
+.d1li:hover .d1a{
+    background-color:  rgb(20, 20, 230);
+}
+.d2ul li:hover{
+    background-color: rgb(20, 20, 230);
+}
+/* #gnb:after{
+    content: '';
+    background-color: rgb(150, 150, 226);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    transition: 0.5s
+}
+#gnb:hover:after{
+    height: 8.2rem;
+} */
+/* slide */
+#slide{
+    width: 1200px;
+    height: 300px;
+}
+.slide-wrapper{
+    width: 100000px;
+}
+
+.tabbox li .abs{
+    background-color: white;
+    left: 0;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    height: 155px;
+    width: 400px;
+}
+.act ul{
+    z-index: 10000;
+}
+.notice li{
+    padding-top: 16px;
+    border-bottom: solid 1px rgb(23, 23, 139);
+}
+.gallery img{
+    padding: 10px;
+}
+.notice span{
+    float: right;
+}
+
+#footer{
+    background-color: rgb(23, 23, 139);
+}
+.flogo{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10000;
+    display: none;
+}
+.pop.show{
+    display: block;
+}
