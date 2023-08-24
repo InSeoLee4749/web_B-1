@@ -1,10 +1,12 @@
 $(document).ready(function(){
-
+    var count =0;
     setInterval(function(){
-        $(".slide-wrapper").animate({"marginTop" : -300},300,function(){
-            $(this).find("div").eq(0).appendTo($(this))
-            $(this).css("margin-top",0)
-        })
+        count++;
+        count %= 3;
+
+        $(".slide-wrapper div").eq(count).addClass('opa').siblings().removeClass('opa')
+
+       
     },3000)
     
     // 탭분리형에서는 필요없음

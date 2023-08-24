@@ -89,7 +89,7 @@ ul,li{
     z-index: 10000;
     background-color:  rgb(150, 150, 226);
 }
-#gnb:hover .d2ul{
+#gnb li:hover .d2ul{
     opacity: 1;
     height: 8.2rem;
 }
@@ -110,7 +110,7 @@ ul,li{
 .d2ul li:hover{
     background-color: rgb(20, 20, 230);
 }
-#gnb:after{
+/* #gnb:after{
     content: '';
     background-color: rgb(150, 150, 226);
     position: absolute;
@@ -122,7 +122,7 @@ ul,li{
 }
 #gnb:hover:after{
     height: 8.2rem;
-}
+} */
 /* slide */
 #slide{
     width: 1200px;
@@ -181,4 +181,15 @@ ul,li{
 }
 .pop.show{
     display: block;
+}
+.slide-wrapper > div{
+    opacity: 0;
+    transition: 0.5s;
+    left:0;
+    top:0;
+    
+}
+.slide-wrapper > div.opa{
+    opacity: 1;
+
 }
